@@ -4,8 +4,8 @@ Material para aprender mas de git y siempre tener una guia a mano
 
 ## Indice
 
-* [GIT BASICO] (git/README.md)
-* [GIT SLIDE] (git-course/README.md)
+* [GIT BASICO](git/README.md)
+* [GIT SLIDE](git-course/README.md)
 <ol>
   <li><a href="https://github.com/gnujavasergio/git-course/git-slide/intro#/index">Introducción</a></li>
   <ol>
