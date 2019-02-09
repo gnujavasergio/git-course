@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Control de Versiones | Maestría en Desarrollo Web</title>
+
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Presentation -->
+      <section>
+        <h3>Maestría en Desarrollo Web</h3>
+        <h2>Control de Versiones</h2>
+        <h1>GIT, comandos básicos</h1>
+      </section>
+
+      <section id="index">
+        <ol>
+          <li><a href="#/start">Inicializar un repositorio</a></li>
+          <li><a href="#/add">Agregar archivos al stage</a></li>
+          <li><a href="#/commit">Hacer un commit</a></li>
+          <li><a href="#/clone">Clonar un repositorio</a></li>
+          <li><a href="#/status">Revisar el estado actual de trabajo</a></li>
+          <li><a href="#/rm">Eliminar archivos</a></li>
+          <li><a href="#/mv">Mover archivos</a></li>
+        </ol>
+      </section>
+
+      <!-- -->
+      <section>
+        <section>
+          <h3>Comandos básicos</h3>
+        </section>
+
+        <section id="start">
+          <h4>Inicializar un repositorio</h4>
+          Un repositorio es una carpeta o conjunto de carpetas que contienen
+          archivos.
+          Podemos crear una carpeta y luego iniciar el repositorio dentro.
+          <pre><code>
+            mkdir Ejemplo && cd Ejemplo
+            git init .
+          </code></pre>
+        </section>
+
+        <section id="add">
+          <h4>Agregar archivos al escenario ("stage")</h4>
+          <pre><code>
+            touch Archivo1.txt
+            echo 'Hola Mundo' >> Archivo1.txt
+            git add Archivo1.txt
+          </code></pre>
+          Al ejecutar el comando git add Archivo1.txt estamos confirmando
+          (agregando el archivo al escenario) que los cambios que realizamos
+          sobre Archivo1.txt se quieren respaldar la próxima vez que
+          consolidemos la información.
+        </section>
+
+        <section id="commit">
+          <h4>Consolidar la información ("commitear")</h4>
+          Para consolidar el archivo previamente creado y puesto en escenario.
+          <pre><code>git commit -m "Commit Inicial"</code></pre>
+          La bandera -m indica que se debe consolidar el archivo con un mensaje
+          informativo.
+        </section>
+
+        <section id="clone">
+          <h4>Clonar repositorio</h4>
+          Primero nos dirigimos al directorio donde queremos que se descargue la
+          copia de seguridad
+          <pre><code>git clone https://github.com/corbmx/taller-git.git</code></pre>
+        </section>
+
+        <section id="status">
+          <h4>Estatus</h4>
+          Identifica si existe un archivo modificado o no en nuestro repositorio.
+          Esto es importante ya que hay que ubicar los archivos en el escenario
+          antes de consolidarlos en la base de datos.
+          <pre><code>git status</code></pre>
+        </section>
+
+        <section id="rm">
+          <h4>Borrar archivo</h4>
+          Sirve para borrar un archivo pero en este caso sirve para agregar al
+          escenario el archivo que vayamos a borrar
+          <pre><code>
+            rm Archivo1.txt
+            git status
+          </code></pre>
+          <pre><code>
+            git rm Archivo1.txt
+            git status
+          </code></pre>
+        </section>
+
+        <section id="mv">
+          <h4>Mover archivos o cambiar nombres</h4>
+          Confirma cualquier cambio de nombre o movimiento de un archivo
+          <pre><code>
+            git mv Archivo2.txt Archivo2_cambio_de_nombre.txt
+            git status
+          </code></pre>
+        </section>
+      </section>
+
+      <section>
+        <a href="#">Ir al siguiente módulo</a>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+  // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    controls: false,
+    slideNumber: true,
+    dependencies: [
+      { src: 'reveal.js/plugin/markdown/marked.js' },
+      { src: 'reveal.js/plugin/markdown/markdown.js' },
+      { src: 'reveal.js/plugin/notes/notes.js', async: true },
+      { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+  });
+  </script>
+</body>
+</html>
