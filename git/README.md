@@ -1,7 +1,6 @@
 # GIT
 
-## Que es Git?
-
-Git es un sistema de control de versiones fue diseñado para linux pero actualmente ya funciona en cualquier sistema operativo Windows, Mac.
-
-* 
+## Indice
+1 [Introducción](introducción)
+2 [Instalación](instalacion)
+3 [Terminales](terminales) 
