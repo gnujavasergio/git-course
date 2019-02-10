@@ -18,7 +18,7 @@ $ sudo apt-get update
 $ sudo apt install terminology
 ```
 
-[tilix]https://gnunn1.github.io/tilix-web/
+[tilix](https://gnunn1.github.io/tilix-web/)
 
 ## Personalizar tu terminal
 [Terminal-Pokemon](https://github.com/LazoCoder/Pokemon-Terminal)
