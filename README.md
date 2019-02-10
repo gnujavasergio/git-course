@@ -6,10 +6,9 @@ Material para aprender mas de git y siempre tener una guia a mano
 
 ## [GIT BASICO](git/README.md)
 
-1. [Introducción](introduccion.md)
-2. [Instalación](instalacion.md)
-3. [Terminales](terminales.md) 
-
+1. [Introducción](introduction.md)
+2. [Instalación](install.md)
+3. [Terminales](terminals.md) 
 
 ## [GIT SLIDE](git-slide/README.md)
 

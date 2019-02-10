@@ -1,6 +1,7 @@
 # GIT
 
-## Indice
-1. [Introducción](introduccion.md)
-2. [Instalación](instalacion.md)
-3. [Terminales](terminales.md) 
+## INDICE
+
+1. [Introducción](introduction.md)
+2. [Instalación](install.md)
+3. [Terminales](terminals.md) 
