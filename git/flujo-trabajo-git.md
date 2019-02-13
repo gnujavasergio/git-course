@@ -26,14 +26,40 @@ drwxr-xr-x  8 gnujavasergio gnujavasergio 4096 Feb  9 23:17 .git
 repo2 (master)$ rm -rf .git
 ```
 
-## Agregando, quitando y viendo el estado de un archivo
+## Estado Stage Area
 
-Agregar un archivo al stage area
+Agregar un archivo al Atage Area
 ```
 blog (master)$ touch index.html
 blog (master)$ git add index.html
+blog (master)$ git status
 ```
 Quitar un archivo del stage area
 ```
-blog (master)$ 
+blog (master)$ git rm --cached index.html
+blog (master)$ git status
+```
+
+Si queremos agregar varios archivos al Stage Area
+```
+blog (master)$ touch style.css
+blog (master)$ git add -A
+```
+
+Borrar el archivo del Stage Area y quitar del proyecto
+```
+blog (master)$ rm -rf style.css
+```
+
+Comprobar que archivos puedo subir al Stage Area
+```
+blog (master)$ git add -n
+```
+
+## Estado Repositorio
+
+Para confirmar que nuestros cambios se añadan a nuestro repositorio local
+```
+blog (master)$ git commit -m "Inicializar nuestro index"
+
 ```
