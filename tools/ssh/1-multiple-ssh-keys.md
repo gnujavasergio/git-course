@@ -1,5 +1,5 @@
-# Múltiples claves SSH para diferentes cuentas en Github o Gitlab
-- A veces necesita más cuentas para acceder a Github o Gitlab y herramientas similares. 
+# Múltiples claves SSH para diferentes cuentas de Github o Gitlab
+- A veces necesita varias cuentas para acceder a Github o Gitlab o herramientas similares. 
 - Por ejemplo, puede tener una cuenta para sus proyectos de su empresa y una segunda cuenta para sus proyectos personales.
 
 ## Generar las llaves ssh de gitlab y Github
